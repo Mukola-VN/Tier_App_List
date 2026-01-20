@@ -27,7 +27,7 @@ const defaultDraggables: Draggables[] = [
 ]
 
 export default function App() {
-  const [draggables, setDraggables] = useState<Draggables[]>(defaultDraggables)
+  const [draggables, ] = useState<Draggables[]>(defaultDraggables)
 
   return (
     <div className="w-screen h-screen flex jusrify-center items-center">
