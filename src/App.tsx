@@ -54,7 +54,7 @@ export default function App() {
 }
 
 function DropZone({ draggables }: { draggables: Draggable[] }) {
-  const { setNodeRef, isOver } = useDroppable({ id: `dropZone` })
+  const { setNodeRef, isOver } = useDroppable({ id: 'dropZone' })
 
   const style = {
     backgroundColor: isOver ? 'green' : undefined,
