@@ -8,7 +8,7 @@ type Draggable = {
   dz?: string
 }
 
-//«Цей масив МОЖЕ містити ТІЛЬКИ обʼєкти типу Draggables»
+//«Цей масив МОЖЕ містити ТІЛЬКИ обʼєкти типу Draggable»
 const defaultDraggables: Draggable[] = [
   { id: crypto.randomUUID(), src: "dreamland.png", dz: undefined },
   { id: crypto.randomUUID(), src: "kill_bill.png", dz: undefined },
