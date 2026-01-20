@@ -36,7 +36,10 @@ export default function App() {
     if (!e.over) return;
     const dropZoneId = e.over.id as string
     const activeDraggableId = e.active.id as string
-    setDraggables(prev => prev.map(draggable => draggable.id !== activeDraggableId ? draggable : { ...draggable, dz: dropZoneId }))
+    setDraggables(prev => prev.map(draggable => 
+      draggable.id !== activeDraggableId 
+      ? draggable 
+      : { ...draggable, dz: dropZoneId }))
   }
 
   return (
@@ -66,7 +69,7 @@ function DropZone({ draggables }: { draggables: Draggable[] }) {
       className="border border-white bg-[#333] h-34 w-full flex gap-4"
     >
       {draggables
-        .filter(draggable => draggable.dz)
+        .filter(draggable => draggable.dz === 'dropZone')
         .map(draggable => (
           <Draggable key={draggable.id} draggable={draggable} />
         ))}
