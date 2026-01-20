@@ -13,7 +13,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: https://username.github.io/repo-name/
+      url: https://Mukola-VN.github.io/Tier_App_List/
 
     steps:
       - uses: actions/checkout@v3
@@ -30,3 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
